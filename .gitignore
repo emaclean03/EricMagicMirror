@@ -78,3 +78,4 @@ Temporary Items
 *.bak
 
 !/tests/node_modules/**/*
+package.json
