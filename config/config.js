@@ -66,6 +66,24 @@ var config = {//
 			}
 		},
 		{
+			module: "MMM-MyStandings",
+			position: "top_right",
+			config: {
+				updateInterval: 60 * 60 * 1000, // every 60 minutes
+				rotateInterval: 1 * 60 * 1000, // every 1 minute
+				sports: [
+					{ league: "MLB", groups: ["American League East", "American League Central", "American League West", "National League East", "National League Central", "National League West"] },
+					{ league: "NHL", groups: ["Atlantic Division", "Metropolitan Division", "Central Division", "Pacific Division"] },
+					{ league: "MLS", groups: ["Eastern Conference", "Western Conference"] },
+				],
+				nameStyle: "short",
+				showLogos: true,
+				useLocalLogos: true,
+				showByDivision: true,
+				fadeSpeed: 2000,
+			}
+		},
+		{
 			module: "updatenotification",
 			position: "top_bar",
 			classes: "dimmable"
