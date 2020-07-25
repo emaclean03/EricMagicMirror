@@ -10,18 +10,18 @@
 
 var config = {//
 	address: "localhost", 	// Address to listen on, can be://
-							// - "localhost", "127.0.0.1", "::1" to listen on loopback interface
-							// - another specific IPv4/6 to listen on a specific interface
-							// - "0.0.0.0", "::" to listen on any interface
-							// Default, when address config is left out or empty, is "localhost"
-	port: 8080,
+	// - "localhost", "127.0.0.1", "::1" to listen on loopback interface
+	// - another specific IPv4/6 to listen on a specific interface
+	// - "0.0.0.0", "::" to listen on any interface
+	// Default, when address config is left out or empty, is "localhost"
+	port: 8000,
 	basePath: "/", 	// The URL path where MagicMirror is hosted. If you are using a Reverse proxy
-					// you must set the sub path here. basePath must end with a /
+	// you must set the sub path here. basePath must end with a /
 	ipWhitelist: ["127.0.0.1", "::ffff:127.0.0.1", "::1"], 	// Set [] to allow all IP addresses
-															// or add a specific IPv4 of 192.168.1.5 :
-															// ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.1.5"],
-															// or IPv4 range of 192.168.3.0 --> 192.168.3.15 use CIDR format :
-															// ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.3.0/28"],
+	// or add a specific IPv4 of 192.168.1.5 :
+	// ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.1.5"],
+	// or IPv4 range of 192.168.3.0 --> 192.168.3.15 use CIDR format :
+	// ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.3.0/28"],
 
 	useHttps: false, 		// Support HTTPS or not, default "false" will use HTTP
 	httpsPrivateKey: "", 	// HTTPS private key path, only require when useHttps is true
@@ -40,63 +40,65 @@ var config = {//
 	modules: [
 		{
 			module: "alert",
-      classes: "dimmable",
+			classes: "dimmable"
 		},
-    {
-      module: "MMM-Traffic",
-      position: "top_left",
-      classes: "dimmed medium",  //optional, default is "bright medium", only applies to commute info not route_name
-      config: {
-        api_key: "AIzaSyCxYZsEB7HZIA9gWrTIEU6u7Ta_XAwllr8",
-        mode: "driving",
-        origin: "12344 Knotty Pine Ct, Spring Hill, FL 34609",
-        destination: "8010 Woodland Center Blvd 700, Tampa, FL 33614",
-        route_name: "Home to HiVelocity",
-        allTime: false,
-        startHr: 5,
-        endHr: 10,
-        changeColor: true,
-        showRouteInfo: true,
-        showGreen: true,
-        hideOffHours: true,
-        limitYellow: 5,  // Greater than 5% of journey time due to traffic
-        limitRed: 20,  // Greater than 20% of journey time due to traffic
-        traffic_model: "best_guess",
-        interval: 120000  // 2 minutes
-      }
-    },
+		{
+			module: "MMM-Traffic",
+			position: "top_left",
+			classes: "dimmed medium",  //optional, default is "bright medium", only applies to commute info not route_name
+			config: {
+				api_key: "AIzaSyCxYZsEB7HZIA9gWrTIEU6u7Ta_XAwllr8",
+				mode: "driving",
+				origin: "12344 Knotty Pine Ct, Spring Hill, FL 34609",
+				destination: "8010 Woodland Center Blvd 700, Tampa, FL 33614",
+				route_name: "Home to HiVelocity",
+				allTime: false,
+				startHr: 5,
+				endHr: 10,
+				changeColor: true,
+				showRouteInfo: true,
+				showGreen: true,
+				hideOffHours: true,
+				limitYellow: 5,  // Greater than 5% of journey time due to traffic
+				limitRed: 20,  // Greater than 20% of journey time due to traffic
+				traffic_model: "best_guess",
+				interval: 120000  // 2 minutes
+			}
+		},
 		{
 			module: "updatenotification",
 			position: "top_bar",
-      classes: "dimmable",
+			classes: "dimmable"
 		},
 		{
 			module: "clock",
 			position: "top_bar",
-      analogSize: '600px',
+			analogSize: "600px"
 
+		},
+		{
+			module: "MMM-LiveNotes",
+			title: 'Current Notes',
+			position: "top_left",
 		},
 		{
 			module: "calendar",
 			header: "Eric / Val Calendar",
 			position: "top_left",
-      classes: "dimmable",
+			classes: "dimmable",
 			config: {
 				calendars: [
 					{
 						symbol: "calendar-check",
-						url: "https://calendar.google.com/calendar/ical/02aehgncjpof2a6t50futcss7s%40group.calendar.google.com/public/basic.ics"					}
+						url: "https://calendar.google.com/calendar/ical/02aehgncjpof2a6t50futcss7s%40group.calendar.google.com/public/basic.ics"
+					}
 				]
 			}
 		},
-		/*{
-			module: "compliments",
-			position: "lower_third"
-		},*/
 		{
 			module: "currentweather",
 			position: "top_right",
-      classes: "dimmable",
+			classes: "dimmable",
 			config: {
 				location: "Florida",
 				locationID: "4173838", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
@@ -106,7 +108,7 @@ var config = {//
 		{
 			module: "weatherforecast",
 			position: "top_right",
-      classes: "dimmable",
+			classes: "dimmable",
 			header: "Weather Forecast",
 			config: {
 				location: "Florida",
@@ -117,7 +119,7 @@ var config = {//
 		{
 			module: "newsfeed",
 			position: "bottom_bar",
-      classes: "dimmable",
+			classes: "dimmable",
 			config: {
 				feeds: [
 					{
@@ -131,33 +133,11 @@ var config = {//
 				broadcastNewsUpdates: true
 			}
 		},
-    {
-      module: "MMM-MyStandings",
-      position: "top_left",
-      classes: "dimmable",
-      config: {
-        updateInterval: 60 * 60 * 1000, // every 60 minutes
-        rotateInterval: 1 * 60 * 1000, // every 1 minute
-        sports: [
-          { league: "MLB", groups: ["American League East", "American League Central", "American League West", "National League East", "National League Central", "National League West"] },
-          { league: "MLS", groups: ["Eastern Conference", "Western Conference"] },
-        ],
-        nameStyle: "short",
-        showLogos: true,
-        useLocalLogos: true,
-        showByDivision: true,
-        fadeSpeed: 2000,
-      }
-    },
-    {
-      module: 'MMM-ModuleScheduler',
-      config: {
-        // SHOW ALL MODULES AT 06:00 AND DIM THEM TO 40% AT 22:00
-        global_schedule: {from: '0 7 * * *', to: '0 22 * * *', groupClass: 'Dimmable', dimLevel: '50' },
-      }
-    },
+
 	]
 };
 
 /*************** DO NOT EDIT THE LINE BELOW ***************/
-if (typeof module !== "undefined") {module.exports = config;}
+if (typeof module !== "undefined") {
+	module.exports = config;
+}
