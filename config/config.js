@@ -79,7 +79,7 @@ var config = {//
 		{
 			module: "MMM-LiveNotes",
 			title: 'Current Notes',
-			position: "top_left",
+			position: "top_right",
 		},
 		{
 			module: "calendar",
