@@ -155,7 +155,7 @@ var config = {//
 			module: 'MMM-ModuleScheduler',
 			config: {
 				// SHOW ALL MODULES EXCEPT clock AND calender BETWEEN 06:00 AND 22:00
-				global_schedule: {from: '0 22 * * *', to: '0 06 * * *', dimLevel:'25', ignoreModules: ['clock', 'calendar'] },
+				global_schedule: {from: '0 06 * * *', to: '0 23 * * *', dimLevel:'20', ignoreModules: ['clock', 'calendar'] },
 
 			}
 		},
