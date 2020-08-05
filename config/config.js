@@ -151,6 +151,15 @@ var config = {//
 				fadeSpeed: 2000,
 			}
 		},
+		{
+			module: 'MMM-ModuleScheduler',
+			config: {
+				// SHOW ALL MODULES EXCEPT clock AND calender BETWEEN 06:00 AND 22:00
+				global_schedule: {from: '0 6 * * *', to: '0 10 * * *', dimLevel:'0', ignoreModules: ['clock', 'calendar'] },
+
+			}
+		},
+
 
 	]
 };
