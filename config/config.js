@@ -49,7 +49,7 @@ var config = {//
 			config: {
 				api_key: "AIzaSyCxYZsEB7HZIA9gWrTIEU6u7Ta_XAwllr8",
 				mode: "driving",
-				origin: "12344 Knotty Pine Ct, Spring Hill, FL 34609",
+				origin: "13383 Candia St, Spring Hill, FL 34609",
 				destination: "8010 Woodland Center Blvd 700, Tampa, FL 33614",
 				route_name: "Home to HiVelocity",
 				allTime: false,
