@@ -73,7 +73,7 @@ var config = {//
 			module: "clock",
 			position: "top_bar",
 			analogSize: "600px",
-			module_schedule: {from: '30 6 * * *', to: '00 19 * * *', dimLevel: '30'}
+			module_schedule: {from: '30 6 * * *', to: '00 19 * * *', dimLevel: '15'}
 
 		},
 		{
