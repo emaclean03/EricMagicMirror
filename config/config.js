@@ -72,9 +72,7 @@ var config = {//
 		{
 			module: "clock",
 			position: "top_bar",
-			analogSize: "600px",
-			
-
+			analogSize: "600px"
 		},
 		{
 			module: "MMM-LiveNotes",
