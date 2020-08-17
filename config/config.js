@@ -73,7 +73,7 @@ var config = {//
 			module: "clock",
 			position: "top_bar",
 			analogSize: "600px",
-			module_schedule: {from: '30 6 * * *', to: '00 19 * * *', dimLevel: '15'}
+			
 
 		},
 		{
@@ -155,7 +155,7 @@ var config = {//
 			module: 'MMM-ModuleScheduler',
 			config: {
 				// SHOW ALL MODULES EXCEPT clock AND calender BETWEEN 06:00 AND 22:00
-				global_schedule: {from: '0 21 * * *', to: '0 05 * * *', dimLevel:'15', ignoreModules: ['clock'] },
+				global_schedule: {from: '0 21 * * *', to: '0 05 * * *', dimLevel:'20},
 
 			}
 		},
