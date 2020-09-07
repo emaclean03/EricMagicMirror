@@ -52,7 +52,7 @@ var config = {//
 				origin: "13383 Candia St, Spring Hill, FL 34609",
 				destination: "8010 Woodland Center Blvd 700, Tampa, FL 33614",
 				route_name: "Home to HiVelocity",
-				avoid: ['tolls', 'highways'],
+				avoid: 'tolls',
 				allTime: true,
 				arrival_time: "1950",
 				changeColor: true,
