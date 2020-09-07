@@ -53,7 +53,7 @@ var config = {//
 				destination: "8010 Woodland Center Blvd 700, Tampa, FL 33614",
 				route_name: "Home to HiVelocity",
 				allTime: true,
-				arrival_time: "0600", 
+				arrival_time: "0600",
 				changeColor: true,
 				showRouteInfo: true,
 				showGreen: true,
@@ -89,6 +89,20 @@ var config = {//
 					{
 						symbol: "calendar-check",
 						url: "https://calendar.google.com/calendar/ical/02aehgncjpof2a6t50futcss7s%40group.calendar.google.com/public/basic.ics"
+					}
+				]
+			}
+		},
+		{
+			module: "calendar",
+			header: "Eric's work",
+			position: "top_left",
+			classes: "dimmable",
+			config: {
+				calendars: [
+					{
+						symbol: "calendar-check",
+						url: "https://app.wheniwork.com/calendar/fd00d0f168232b83c9afddd19138a545ed1ef9db.ics"
 					}
 				]
 			}
@@ -131,7 +145,7 @@ var config = {//
 				broadcastNewsUpdates: true
 			}
 		},
-		{
+		/*{
 			module: "MMM-MyStandings",
 			position: "top_left",
 			config: {
@@ -148,7 +162,7 @@ var config = {//
 				showByDivision: true,
 				fadeSpeed: 2000,
 			}
-		},
+		},*/
 		{
 			module: 'MMM-ModuleScheduler',
 			config: {
