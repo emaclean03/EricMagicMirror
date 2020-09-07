@@ -88,6 +88,7 @@ var config = {//
 				calendars: [
 					{
 						symbol: "calendar-check",
+						maximumNumberOfDays: 7,
 						url: "https://calendar.google.com/calendar/ical/02aehgncjpof2a6t50futcss7s%40group.calendar.google.com/public/basic.ics"
 					}
 				]
@@ -102,6 +103,7 @@ var config = {//
 				calendars: [
 					{
 						symbol: "calendar-check",
+						maximumNumberOfDays: 14,
 						url: "https://app.wheniwork.com/calendar/fd00d0f168232b83c9afddd19138a545ed1ef9db.ics"
 					}
 				]
