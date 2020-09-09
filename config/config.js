@@ -66,11 +66,11 @@ var config = {//
 				interval: 120000  // 2 minutes
 			}
 		},
-		{
+		/*{
 			module: "updatenotification",
 			position: "top_bar",
 			classes: "dimmable"
-		},
+		},*/
 		{
 			module: "clock",
 			position: "top_bar",
