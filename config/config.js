@@ -42,7 +42,7 @@ var config = {//
 			module: "alert",
 			classes: "dimmable"
 		},
-		{
+		/*{
 			module: "MMM-Traffic",
 			position: "top_left",
 			classes: "dimmed medium",  //optional, default is "bright medium", only applies to commute info not route_name
@@ -65,7 +65,7 @@ var config = {//
 				traffic_model: "best_guess",
 				interval: 120000  // 2 minutes
 			}
-		},
+		},*/
 		/*{
 			module: "updatenotification",
 			position: "top_bar",
