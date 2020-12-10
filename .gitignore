@@ -59,7 +59,8 @@ Temporary Items
 .Trash-*
 
 # Ignore all modules except the default modules.
-
+!/modules/MMM-LiveNotes
+!/modules/MMM-GoogleImages
 !/modules/default
 !/modules/default/**
 !/modules/README.md**

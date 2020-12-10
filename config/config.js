@@ -42,35 +42,6 @@ var config = {//
 			module: "alert",
 			classes: "dimmable"
 		},
-		/*{
-			module: "MMM-Traffic",
-			position: "top_left",
-			classes: "dimmed medium",  //optional, default is "bright medium", only applies to commute info not route_name
-			config: {
-				api_key: "AIzaSyCxYZsEB7HZIA9gWrTIEU6u7Ta_XAwllr8",
-				twelveHour: true,
-				mode: "driving",
-				origin: "13383 Candia St, Spring Hill, FL 34609",
-				destination: "8010 Woodland Center Blvd 700, Tampa, FL 33614",
-				route_name: "Home to HiVelocity",
-				avoid: 'tolls',
-				allTime: true,
-				arrival_time: "1950",
-				changeColor: true,
-				showRouteInfo: true,
-				showGreen: true,
-				hideOffHours: true,
-				limitYellow: 5,  // Greater than 5% of journey time due to traffic
-				limitRed: 20,  // Greater than 20% of journey time due to traffic
-				traffic_model: "best_guess",
-				interval: 120000  // 2 minutes
-			}
-		},*/
-		/*{
-			module: "updatenotification",
-			position: "top_bar",
-			classes: "dimmable"
-		},*/
 		{
 			module: "clock",
 			position: "top_bar",
@@ -81,9 +52,14 @@ var config = {//
 			title: 'Current Notes',
 			position: "top_right",
 		},
+		/*{
+			module: "MMM-GoogleImages",
+			title: 'Current Notes',
+			position: "bottom_bar",
+		},*/
 		{
 			module: "calendar",
-			header: "Eric / Val Calendar",
+			header: "Family Calendar",
 			position: "top_left",
 			classes: "dimmable",
 			config: {
@@ -91,12 +67,28 @@ var config = {//
 					{
 						symbol: "calendar-check",
 						maximumNumberOfDays: 7,
-						url: "https://calendar.google.com/calendar/ical/02aehgncjpof2a6t50futcss7s%40group.calendar.google.com/public/basic.ics"
+						//url: "https://calendar.google.com/calendar/ical/02aehgncjpof2a6t50futcss7s%40group.calendar.google.com/public/basic.ics"
+						url: "https://calendar.google.com/calendar/embed?src=family01068811041469020433%40group.calendar.google.com&ctz=America%2FNew_York"
+					}
+				]
+			}
+		},{
+			module: "calendar",
+			header: "My Calendar",
+			position: "top_left",
+			classes: "dimmable",
+			config: {
+				calendars: [
+					{
+						symbol: "calendar-check",
+						maximumNumberOfDays: 7,
+						//url: "https://calendar.google.com/calendar/ical/02aehgncjpof2a6t50futcss7s%40group.calendar.google.com/public/basic.ics"
+						url: "https://calendar.google.com/calendar/ical/3a9pd2dfo6cd8m3q0lgh0k7cns%40group.calendar.google.com/private-3cbfa7b23625cc1ad7b642865e573f80/basic.ics"
 					}
 				]
 			}
 		},
-		{
+		/*{
 			module: "calendar",
 			header: "Eric's work",
 			position: "top_left",
@@ -110,14 +102,14 @@ var config = {//
 					}
 				]
 			}
-		},
+		},*/
 		{
 			module: "currentweather",
 			position: "top_right",
 			classes: "dimmable",
 			config: {
 				location: "Florida",
-				locationID: "4173838", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
+				locationID: "4148986", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
 				appid: "16b68a43843e159fb9aaf9e3d514fa72"
 			}
 		},
@@ -128,7 +120,7 @@ var config = {//
 			header: "Weather Forecast",
 			config: {
 				location: "Florida",
-				locationID: "4173838", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
+				locationID: "4148986", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
 				appid: "16b68a43843e159fb9aaf9e3d514fa72"
 			}
 		},
@@ -137,12 +129,6 @@ var config = {//
 			position: "bottom_bar",
 			classes: "dimmable",
 			config: {
-				feeds: [
-					{
-						title: "ESPN",
-						url: "https://www.espn.com/espn/rss/news"
-					}
-				],
 				showSourceTitle: true,
 				showPublishDate: true,
 				broadcastNewsFeeds: true,
