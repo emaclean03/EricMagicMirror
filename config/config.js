@@ -45,27 +45,14 @@ var config = {//
 		/*{
 			module: "MMM-Traffic",
 			position: "top_left",
-			classes: "dimmed medium",  //optional, default is "bright medium", only applies to commute info not route_name
 			config: {
-				api_key: "AIzaSyCxYZsEB7HZIA9gWrTIEU6u7Ta_XAwllr8",
-				twelveHour: true,
-				mode: "driving",
-				origin: "13383 Candia St, Spring Hill, FL 34609",
-				destination: "8010 Woodland Center Blvd 700, Tampa, FL 33614",
-				route_name: "Home to HiVelocity",
-				avoid: 'tolls',
-				allTime: true,
-				arrival_time: "1950",
-				changeColor: true,
-				showRouteInfo: true,
-				showGreen: true,
-				hideOffHours: true,
-				limitYellow: 5,  // Greater than 5% of journey time due to traffic
-				limitRed: 20,  // Greater than 20% of journey time due to traffic
-				traffic_model: "best_guess",
-				interval: 120000  // 2 minutes
+				accessToken: "pk.eyJ1IjoiZW1hY2xlYW4wMyIsImEiOiJja2Y3YWEzOWcwMGZoMzRvMGtsZ25qcjI3In0.KQRejyymWSxF6EcaIU5onw",
+				originCoords: "-82.500634,28.477990",
+				destinationCoords: "-82.524596,28.020108",
+				firstLine: "{duration} mins",
+				secondLine: "Home To Work",
 			}
-		},*/
+		}*/
 		/*{
 			module: "updatenotification",
 			position: "top_bar",
@@ -83,11 +70,15 @@ var config = {//
 		},
 		{
 			module: "calendar",
-			header: "Eric / Val Calendar",
+			header: "Eric / Vaty" +
+				"l Calendar",
 			position: "top_left",
 			classes: "dimmable",
+			maxTitleLength: 5,
+			wrapEvents:true,
 			config: {
 				calendars: [
+
 					{
 						symbol: "calendar-check",
 						maximumNumberOfDays: 7,
