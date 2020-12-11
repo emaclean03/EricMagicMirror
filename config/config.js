@@ -53,11 +53,11 @@ var config = {//
 			title: 'Current Notes',
 			position: "top_right",
 		},
-		/*{
+		{
 			module: "MMM-GoogleImages",
-			title: 'Current Notes',
+			albumURL: "this is a url",
 			position: "bottom_bar",
-		},*/
+		},
 		{
 			module: "calendar",
 			header: "Family Calendar",
@@ -67,7 +67,6 @@ var config = {//
 			wrapEvents:true,
 			config: {
 				calendars: [
-
 					{
 						symbol: "calendar-check",
 						maximumNumberOfDays: 7,
