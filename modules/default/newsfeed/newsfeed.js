@@ -9,8 +9,8 @@ Module.register("newsfeed", {
 	defaults: {
 		feeds: [
 			{
-				title: "New York Times",
-				url: "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+				title: "Fox News",
+				url: "http://feeds.foxnews.com/foxnews/latest",
 				encoding: "UTF-8" //ISO-8859-1
 			}
 		],

@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"outDir": "../built",
+		"module": "commonjs",
+		"target": "es5",
+		"sourceMap": true
+	},
+	"include": ["./modules/MMM-LiveNotes"],
+	"exclude": ["node_modules"]
+}
