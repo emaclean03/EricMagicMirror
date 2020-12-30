@@ -59,6 +59,7 @@ const CalendarFetcher = function (url, reloadInterval, excludedEvents, maximumNu
 			}
 
 			const data = ical.parseICS(requestData);
+
 			const newEvents = [];
 
 			// limitFunction doesn't do much limiting, see comment re: the dates array in rrule section below as to why we need to do the filtering ourselves

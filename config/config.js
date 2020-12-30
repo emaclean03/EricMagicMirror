@@ -60,7 +60,7 @@ var config = {//
 		},
 		{
 			module: "calendar",
-			header: "Family Calendar",
+			header: "My Calendar",
 			position: "top_left",
 			classes: "dimmable",
 			maxTitleLength: 5,
@@ -70,14 +70,14 @@ var config = {//
 					{
 						symbol: "calendar-check",
 						maximumNumberOfDays: 7,
-						//url: "https://calendar.google.com/calendar/ical/02aehgncjpof2a6t50futcss7s%40group.calendar.google.com/public/basic.ics"
-						url: "https://calendar.google.com/calendar/embed?src=family01068811041469020433%40group.calendar.google.com&ctz=America%2FNew_York"
+						url: "https://calendar.google.com/calendar/ical/terrymac0421%40gmail.com/private-4d81bab575633c97a7de6f6b1104afc4/basic.ics"
+						//url: "https://calendar.google.com/calendar/embed?src=family01068811041469020433%40group.calendar.google.com&ctz=America%2FNew_York"
 					}
 				]
 			}
 		},{
 			module: "calendar",
-			header: "My Calendar",
+			header: "ProIRB Calendar",
 			position: "top_left",
 			classes: "dimmable",
 			config: {
