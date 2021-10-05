@@ -91,6 +91,22 @@ var config = {//
 				]
 			}
 		},
+		{
+			module: 'MMM-iFrame-Ping',
+			position: 'top_left',	// This can be any of the regions.
+			config: {
+				// See 'Configuration options' for more information.
+				url: "http://192.168.1.11:81/ui3.html?user=admin&pw=Iphone3gs!", //url to display
+				height:"100%",
+				width:"100%",
+				autoRefresh: false, //set to false for video
+				updateInterval: 1, //in min. Only if autoRefresh: true
+				displayLastUpdate: true,
+				width: "100%", // Optional. Default: 100%
+				height: "400px", //Optional. Default: 100px
+				scrolling: "no"
+			}
+		},
 		/*{
 			module: "calendar",
 			header: "Eric's work",
