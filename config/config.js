@@ -96,7 +96,7 @@ var config = {//
 			position: 'top_left',	// This can be any of the regions.
 			config: {
 				// See 'Configuration options' for more information.
-				url: "http://192.168.1.11:81/ui3.html?user=admin&pw=Iphone3gs!", //url to display
+				url: "http://192.168.1.11:81/ui3.htm?user=admin&pw=Iphone3gs!", //url to display
 				height:"100%",
 				width:"100%",
 				autoRefresh: false, //set to false for video
