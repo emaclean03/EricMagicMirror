@@ -1,6 +1,5 @@
 const NodeHelper = require("node_helper");
 const request = require("request");
-const { Log } = require("../../module-types");
 
 module.exports = NodeHelper.create({
 	socketNotificationReceived: function (notification, payload) {
