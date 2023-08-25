@@ -70,21 +70,6 @@ var config = {//
 					}
 				]
 			}
-		},{
-			module: "calendar",
-			header: "ProIRB Calendar",
-			position: "top_left",
-			classes: "dimmable",
-			config: {
-				calendars: [
-					{
-						symbol: "calendar-check",
-						maximumNumberOfDays: 7,
-						//url: "https://calendar.google.com/calendar/ical/02aehgncjpof2a6t50futcss7s%40group.calendar.google.com/public/basic.ics"
-						url: "https://calendar.google.com/calendar/ical/3a9pd2dfo6cd8m3q0lgh0k7cns%40group.calendar.google.com/private-3cbfa7b23625cc1ad7b642865e573f80/basic.ics"
-					}
-				]
-			}
 		},
 		{
 			module: 'MMM-iFrame-Ping',
