@@ -13,7 +13,7 @@ module.exports = NodeHelper.create({
 		});*/
 
 		fetch("https://photos.app.goo.gl/6vPWySmZZ6bcesT26").then((response) => {
-			Log.log("Response: ", response);
+			console.log("Response: ", response);
 			self.sendNotification("Image", extractPhotos(response.body));
 		});
 	},
