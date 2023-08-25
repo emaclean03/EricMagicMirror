@@ -7,7 +7,6 @@ module.exports = NodeHelper.create({
 		var self = this;
 
 		request("https://photos.app.goo.gl/6vPWySmZZ6bcesT26", function (error, response, body) {
-			console.log("PHOTO response: ", body);
 			self.sendSocketNotification("Image", extractPhotos(body));
 		});
 	},
@@ -15,14 +14,13 @@ module.exports = NodeHelper.create({
 	start: function () {}
 });
 
-const regex = /\["(https:\/\/lh3\.googleusercontent\.com\/[a-zA-Z0-9\-_]*)"/g;
+const regex = /\["(https:\/\/lh3\.googleusercontent\.com\/[a-zA-Z0-9\-_]*\/[a-zA-Z0-9\-_]*)"/g;
 
 function extractPhotos(content) {
 	const links = new Set();
 	let match;
 	console.log("BODY", regex);
 	while ((match = regex.exec(content))) {
-		console.log("BODY", match);
 		links.add(match[1]);
 	}
 	return Array.from(links);
