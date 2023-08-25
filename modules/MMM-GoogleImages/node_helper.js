@@ -22,6 +22,7 @@ function extractPhotos(content) {
 	let match;
 	console.log("BODY", regex);
 	while ((match = regex.exec(content))) {
+		console.log("BODY", match);
 		links.add(match[1]);
 	}
 	return Array.from(links);
