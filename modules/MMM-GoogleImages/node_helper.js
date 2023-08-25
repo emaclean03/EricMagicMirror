@@ -20,9 +20,9 @@ const regex = /\["(https:\/\/lh3\.googleusercontent\.com\/[a-zA-Z0-9\-_]*)"/g;
 function extractPhotos(content) {
 	const links = new Set();
 	let match;
+	console.log("BODY", regex.exec(content));
 	while ((match = regex.exec(content))) {
 		links.add(match[1]);
 	}
-	console.log("BODY", links);
 	return Array.from(links);
 }
