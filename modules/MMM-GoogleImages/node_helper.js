@@ -7,7 +7,7 @@ module.exports = NodeHelper.create({
 		var self = this;
 
 		request("https://photos.app.goo.gl/6vPWySmZZ6bcesT26", function (error, response, body) {
-			console.log("PHOTO: ", extractPhotos(body));
+			console.log("PHOTO response: ", response);
 			self.sendSocketNotification("Image", extractPhotos(body));
 		});
 	},
