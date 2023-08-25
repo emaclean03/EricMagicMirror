@@ -19,6 +19,7 @@ Module.register("MMM-GoogleImages", {
 	socketNotificationReceived: function (notification, payload) {
 		if (notification === "Image") {
 			this.imageURL = payload[Math.floor(Math.random() * payload.length)];
+			console.log(this.imageURL);
 			this.updateDom(2.5 * 1000);
 		}
 	},

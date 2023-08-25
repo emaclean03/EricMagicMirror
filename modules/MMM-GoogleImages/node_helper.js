@@ -1,6 +1,5 @@
 const NodeHelper = require("node_helper");
 const request = require("request");
-const Log = require("../../js/logger");
 
 module.exports = NodeHelper.create({
 	socketNotificationReceived: function (notification, payload) {
@@ -8,6 +7,7 @@ module.exports = NodeHelper.create({
 		var self = this;
 
 		request("https://photos.app.goo.gl/6vPWySmZZ6bcesT26", function (error, response, body) {
+			console.log(extractPhotos(body));
 			self.sendSocketNotification("Image", extractPhotos(body));
 		});
 	},
