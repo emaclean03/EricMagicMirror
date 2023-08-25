@@ -6,14 +6,9 @@ module.exports = NodeHelper.create({
 		/*Sends the payload back to broadcast to clients*/
 		var self = this;
 
-		/*request("https://photos.app.goo.gl/6vPWySmZZ6bcesT26", function (error, response, body) {
+		request("https://photos.app.goo.gl/6vPWySmZZ6bcesT26", function (error, response, body) {
 			console.log("PHOTO: ", extractPhotos(body));
 			self.sendSocketNotification("Image", extractPhotos(body));
-		});*/
-
-		fetch("https://photos.app.goo.gl/6vPWySmZZ6bcesT26").then((response) => {
-			console.log("Response: ", response);
-			self.sendNotification("Image", extractPhotos(response.body));
 		});
 	},
 
@@ -23,6 +18,7 @@ module.exports = NodeHelper.create({
 const regex = /\["(https:\/\/lh3\.googleusercontent\.com\/[a-zA-Z0-9\-_]*)"/g;
 
 function extractPhotos(content) {
+	console.log("BODY", content);
 	const links = new Set();
 	let match;
 	while ((match = regex.exec(content))) {
