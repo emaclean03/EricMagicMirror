@@ -49,11 +49,6 @@ var config = {//
 			analogSize: "600px"
 		},
 		{
-			module: "MMM-LiveNotes",
-			title: 'Current Notes',
-			position: "top_right",
-		},
-		{
 			module: "MMM-GoogleImages",
 			albumURL: "this is a url",
 			position: "bottom_bar",
